@@ -1,0 +1,31 @@
+#include<stdio.h>
+#include<string.h>
+
+void convertNum(int decimal, int base){
+    
+int store = decimal;
+int iteration = 0;
+char str_Rmndr[decimal];
+char alphabet[]= {'0','1','2','3','4','5', '6', '7','8', '9','A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'};
+
+while (store>0)
+{
+    int reminder = store % base;
+
+        str_Rmndr[iteration++]= alphabet[reminder];
+    
+store/=base;
+}
+str_Rmndr[iteration] = '\0';
+
+printf("%d--> %s\n",decimal, strrev(str_Rmndr));
+}
+
+
+int main(){
+int decimal, base;
+scanf("%d %d",&decimal,&base);
+
+convertNum(decimal,base); 
+return 0;
+}
