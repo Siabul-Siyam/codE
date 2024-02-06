@@ -24,7 +24,7 @@ printf("%d--> %s\n",decimal, strrev(str_Rmndr));
 
 int main(){
 int decimal, base;
-printf("Enter the Decimal value and the Base"\n);
+printf("Enter the Decimal value and the Base\n");
 scanf("%d %d",&decimal,&base);
 
 convertNum(decimal,base); 
