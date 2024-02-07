@@ -1,0 +1,73 @@
+{
+    "Hello World": {
+        "prefix": "hello",
+        "body": [
+            "#include <stdio.h>",
+            "",
+            "int main() {",
+            "    printf(\"Hello, World!\\n\");",
+            "    return 0;",
+            "}"
+        ],
+        "description": "Prints Hello, World!"
+    },
+
+    "Basic Structure": {
+        "prefix": "basic",
+        "body": [
+            "#include <stdio.h>",
+            "",
+            "int main() {",
+            "  ",
+            " $0 ",
+            "  ",
+
+            "    return 0;",
+            "}"
+        ],
+        "description": "Basic C program structure"
+    },
+
+    "Function Definition": {
+        "prefix": "function",
+        "body": [
+            "returnType functionName(parameters) {",
+            "    // Your code here",
+            "}"
+        ],
+        "description": "Function definition template"
+    },
+
+    // ... (previous snippets)
+
+    "Printf Statement": {
+        "prefix": "pf",
+        "body": [
+            "printf(\"$1\"$2);$0"
+        ],
+        "description": "Print formatted output"
+    },
+
+    "Scanf Statement": {
+        "prefix": "sc",
+        "body": [
+            "scanf(\"$1\", &$2);$0"
+        ],
+        "description": "Read formatted input"
+    },
+
+    "Dynamic Array Allocation": {
+        "prefix": "malloc",
+        "body": [
+            "int* array = (int*)malloc(N * sizeof(int));",
+            "if (array == NULL) {",
+            "    // Allocation failed, handle error",
+            "} else {",
+            "    // Use the allocated array",
+            "}",
+            "// Don't forget to free the memory when done",
+            "free(array);"
+        ],
+        "description": "Dynamically allocate an array"
+    }
+}
